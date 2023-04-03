@@ -25,6 +25,14 @@
             }
           ]
         },
+        "step2": {
+          "astra": [
+            {
+              "command": "./step2.sh",
+              "maxInvocations": "unlimited"
+            }
+          ]
+        },
         "finish": {
           "term_3": [
             {

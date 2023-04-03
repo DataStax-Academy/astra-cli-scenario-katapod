@@ -21,21 +21,27 @@
 <!-- CONTENT -->
 
 <div class="step-title">Working with Databases</div>
-<hr>
 
 **✅ Create a Database `demo`**
 
-> _As no options provided the free tier region will be used: `GCP` in region `us-east-1`. Default behaviour is a blocking command_
+> __
 
 ```
 astra db create demo
 ```
+
+<details><summary>ℹ️ Informations:</summary>
+<li>As no options provided the free tier region will be used: <span style="color:blue;font-family:courier new">GCP</span> in region <span style="color:blue;font-family:courier new">us-east-1</span>. 
+<li>Default behaviour is a blocking command. The prompt will be back when the database turned <span style="color:#008800;font-family:courier new">ACTIVE</span>
+</details>
+&nbsp;
 
 **✅ Show your active db :**
 
 ```
 astra db describe demo
 ```
+
 
 
 <!-- NAVIGATION -->

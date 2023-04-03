@@ -32,11 +32,10 @@ source /home/gitpod/.astra/cli/astra-init.sh
 ```
 
 <details><summary>ℹ️ Informations:</summary>
-<li>To install on <span style="color:blue;font-family:courier new">MacOS</span> you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`
-<li>To install on `Windows` reuse the script leveraging `WSL2`
+<li>To install on <span style="color:blue;font-family:courier new">MacOS</span> you can either reuse the same command or leveraging brew with <span style="color:blue;font-family:courier new">brew install datastax/astra-cli/astra-cli</span>.
+<li>To install on <span style="color:blue;font-family:courier new">Windows</span> reuse the script leveraging WSL2.
 </details>
 &nbsp;
-
 
 **✅ Validate installation:**
 
@@ -52,20 +51,17 @@ astra setup
 ```
 
 <details><summary>ℹ️ Informations:</summary>
-- Command `astra setup --token AstraCS:...` is also available to avoid prompting.
+<li>Command <span style="color:blue;font-family:courier new">astra setup --token AstraCS:...</span> is also available to avoid prompting.
 </details>
 &nbsp;
 
-
-ℹ️ **Information**:
-
-**`✅ Validate your settings:`**
+**✅ Validate your settings:**
 
 ```
 astra org
 ```
 
-**`✅ Show configurations:`**
+**✅ Show configurations:**
 
 ```
 astra config list
