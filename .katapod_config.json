@@ -1,0 +1,48 @@
+{
+    "layout": {
+      "terminals": [
+        {
+          "id": "astra",
+          "name": "astra-cli"
+        }
+      ]
+    },
+    "navigation": {
+      "onLoadCommands": {
+        "intro": {
+          "astra": [
+            {
+              "command": "./intro.sh",
+              "maxInvocations": 2
+            }
+          ]
+        },
+        "step1": {
+          "astra": [
+            {
+              "command": "clear; echo Step1:\\)",
+              "maxInvocations": "unlimited"
+            }
+          ]
+        },
+        "step2": {
+          "termTwo": [
+            {
+              "command": "clear; ./t2c2.sh"
+            }
+          ]
+        },
+        "finish": {
+          "term_3": [
+            {
+              "command": "clear; curl http://qrenco.de/Katapod"
+            },
+            {
+              "command": "echo Welcome here ... again and again",
+              "maxInvocations": "unlimited"
+            }
+          ]
+        }
+      }
+    }
+  }
