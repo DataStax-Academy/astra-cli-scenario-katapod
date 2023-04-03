@@ -22,10 +22,7 @@
 
 <div class="step-title">Installation and Setup</div>
 
-### 1. Installation 
-<hr>
-
-**`✅ 1.a` - Install the CLI (linux):**
+**`✅ Install the CLI (linux):`**
 
 ```
 ### astra
@@ -35,28 +32,28 @@ source /home/gitpod/.astra/cli/astra-init.sh
 
 > ℹ️ To install on MacOS you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`
 
-**`✅ 1.b` - Validate installation:**
+**`✅ Validate installation:`**
 
 ```
 clear
 astra
 ```
 
-**✅ Setup your token:** (_Enter your token when prompted_)
+**`✅ Setup your token:** (_Enter your token when prompted_)`**
 
 ```
 astra setup
 ```
 
-> ℹ️ `astra setup --token AstraCS:...` is also available as a command with no prompt.
+ℹ️ **Information**:_`astra setup --token AstraCS:...` is also available as a command with no prompt._
 
-**✅ Validate your settings:**
+**`✅ Validate your settings:`**
 
 ```
 astra org
 ```
 
-**✅ Show configurations:**
+**`✅ Show configurations:`**
 
 ```
 astra config list
