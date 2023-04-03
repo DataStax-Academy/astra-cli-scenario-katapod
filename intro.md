@@ -34,6 +34,7 @@
 **`✅ 1.a` - Access `Astra` and register with `Google`,`Github` or an email address.**
 
 > ℹ️ This command will open a new Tab in your browser:
+
 ```
 gp preview https://astra.datastax.com --external
 ```

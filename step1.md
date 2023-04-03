@@ -26,7 +26,6 @@
 **✅ Install the CLI (linux):**
 
 ```
-### astra
 curl -Ls "https://dtsx.io/get-astra-cli" | bash
 source /home/gitpod/.astra/cli/astra-init.sh
 ```

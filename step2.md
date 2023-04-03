@@ -22,17 +22,23 @@
 
 <div class="step-title">Working with Databases</div>
 
-**✅ Create a Database `demo`**
+**✅ Show your database list**
 
-> __
+```
+astra db list
+```
+
+**✅ Create a Database `demo`**
 
 ```
 astra db create demo
 ```
 
 <details><summary>ℹ️ Informations:</summary>
-<li>As no options provided the free tier region will be used: <span style="color:blue;font-family:courier new">GCP</span> in region <span style="color:blue;font-family:courier new">us-east-1</span>. 
-<li>Default behaviour is a blocking command. The prompt will be back when the database turned <span style="color:#008800;font-family:courier new">ACTIVE</span>
+<li>With no options the free tier will be used. Cloud is <span style="color:blue;font-family:courier new">GCP</span> and region <span style="color:blue;font-family:courier new">us-east-1</span>. 
+<li>Blocking by default, the prompt will be back when the database turned <span style="color:#008800;font-family:courier new">ACTIVE</span>
+<li>You can make async with <span style="color:blue;font-family:courier new">--async</span>
+<li>All options on <span style="color:blue;font-family:courier new">astra help db create</span>
 </details>
 &nbsp;
 
@@ -41,7 +47,6 @@ astra db create demo
 ```
 astra db describe demo
 ```
-
 
 
 <!-- NAVIGATION -->
