@@ -32,8 +32,8 @@ source /home/gitpod/.astra/cli/astra-init.sh
 ```
 
 <details><summary>ℹ️ Informations:</summary>
-- To install on `MacOS` you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`
-- To install on `Windows` reuse the script leveraging `WSL2`
+<li>To install on <pre>MacOS</pre> you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`
+<li>To install on `Windows` reuse the script leveraging `WSL2`
 </details>
 &nbsp;
 

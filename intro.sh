@@ -1,19 +1,13 @@
 #!/usr/bin/env bash
 
 clear
-echo " ██████╗  █████╗ ████████╗ █████╗ ███████╗████████╗ █████╗ ██╗  ██╗ "
-echo " ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝██╔══██╗╚██╗██╔╝ "
-echo " ██║  ██║███████║   ██║   ███████║███████╗   ██║   ███████║ ╚███╔╝  "
-echo " ██║  ██║██╔══██║   ██║   ██╔══██║╚════██║   ██║   ██╔══██║ ██╔██╗  "
-echo " ██████╔╝██║  ██║   ██║   ██║  ██║███████║   ██║   ██║  ██║██╔╝ ██╗ "
-echo " ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ "
-echo ""
+echo "--------------------------"
+echo "      Introduction        "
+echo "--------------------------"
 
 echo "Welcome."
 echo ""
-echo "There is no to do in this terminal at this step."
-echo ""
-echo "Please create your token in Astra"
+echo "Create a token in Astra."
 echo ""
 
 
