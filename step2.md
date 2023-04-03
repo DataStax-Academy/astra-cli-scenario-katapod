@@ -9,68 +9,44 @@
 
 <!-- NAVIGATION -->
 <div id="navigation-top" class="navigation-top">
- <a href='command:katapod.loadPage?[{"step":"intro"}]' 
+ <a href='command:katapod.loadPage?[{"step":"step1"}]' 
    class="btn btn-dark navigation-top-left">⬅️ Back
  </a>
 <span class="step-count"> Step 1 of 2</span>
- <a href='command:katapod.loadPage?[{"step":"step2"}]' 
+ <a href='command:katapod.loadPage?[{"step":"step3"}]' 
     class="btn btn-dark navigation-top-right">Next ➡️
   </a>
 </div>
 
 <!-- CONTENT -->
 
-<div class="step-title">Installation and Setup</div>
+<div class="step-title">Database Management</div>
 
-### Installation 
+### Create Database 
 <hr>
 
-**✅ Install the CLI (linux):**
+**✅ Create a Database `demo`**
 
-> _To install on MacOS you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`_
-
-```
-### astra
-curl -Ls "https://dtsx.io/get-astra-cli"
-source /home/gitpod/.astra/cli/astra-init.sh
-```
-
-**✅ Validate installation:**
+> _As no options provided the free tier region will be used: `GCP` in region `us-east-1`. Default behaviour is a blocking command_
 
 ```
-astra
+astra db create demo
 ```
 
-**✅ Setup your token:**
-
-> _The command `astra setup --token AstraCS:...` is also available with no prompt._
-
-Enter your token in the prompt when asked.
+**✅ Show your active db :**
 
 ```
-astra setup
+astra db describe demo
 ```
 
-**✅ Show organization:**
 
-```
-astra org
-```
-
-**✅ Show configurations:**
-
-> The CLI allows you to work on multiple organizations. To know more use `astra help config`
-
-```
-astra config list
-```
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
- <a href='command:katapod.loadPage?[{"step":"intro"}]'
+ <a href='command:katapod.loadPage?[{"step":"step1"}]'
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
- <a href='command:katapod.loadPage?[{"step":"step2"}]'
+ <a href='command:katapod.loadPage?[{"step":"step3"}]'
     class="btn btn-dark navigation-bottom-right">Next ➡️
   </a>
 </div>
