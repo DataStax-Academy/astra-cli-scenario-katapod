@@ -20,15 +20,8 @@
         "step1": {
           "astra": [
             {
-              "command": "clear; echo Step1:\\)",
+              "command": "./step1.sh",
               "maxInvocations": "unlimited"
-            }
-          ]
-        },
-        "step2": {
-          "termTwo": [
-            {
-              "command": "clear; ./t2c2.sh"
             }
           ]
         },

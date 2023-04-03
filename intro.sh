@@ -9,4 +9,4 @@ echo " ██████╔╝██║  ██║   ██║   ██║  █
 echo " ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ "
 echo ""
 
-astra
+echo "Welcome to the scenario, Nothing to do in this terminal at this step. Please create your token if you do not have one"

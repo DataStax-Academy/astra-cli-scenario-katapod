@@ -26,7 +26,8 @@
      </div>
     </div>
 
-#### Create an Astra Account
+### Create an Astra Account
+<hr>
 
 > **Datastax Astra** is a cloud-native, fully managed database-as-a-service (DBaaS) based on Apache Cassandra. It provides a scalable, performant and highly available database solution without the operational overhead of managing Cassandra clusters. Astra supports both SQL and NoSQL APIs, and includes features like backup and restore, monitoring and alerting, and access control. It enables developers to focus on application development while the database infrastructure is managed by Datastax.
 
@@ -34,11 +35,12 @@
 
 ![](images/astra-login.png)
 
-#### Create an Astra Token
+### Create an Astra Token
+<hr>
 
-- `✅ 1.2.a` - Locate `Settings` (#1) in the menu on the left, then `Token Management` (#2)
+#### `✅ 1.2.a` - Locate `Settings` (#1) in the menu on the left, then `Token Management` (#2)
 
-- `✅ 1.2.b` - Select the role `Organization Administrator` before clicking `[Generate Token]`
+#### `✅ 1.2.b` - Select the role `Organization Administrator` before clicking `[Generate Token]`
 
 ![](images/setup-astra-2.png)
 

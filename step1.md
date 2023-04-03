@@ -20,7 +20,7 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Connect to Astra DB and create a database</div>
+<div class="step-title">Setup and Configuration</div>
 
 ✅ Notice that on loading of this page a command is executed on the `cqlsh-editor` console.
 
