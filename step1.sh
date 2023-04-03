@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
 clear
-astra
+echo "--------------------------"
+echo "  Installation and Setup  "
+echo "--------------------------"

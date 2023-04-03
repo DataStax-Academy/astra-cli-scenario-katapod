@@ -20,9 +20,7 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Database Management</div>
-
-### Create Database 
+<div class="step-title">Working with Databases</div>
 <hr>
 
 **✅ Create a Database `demo`**
@@ -38,7 +36,6 @@ astra db create demo
 ```
 astra db describe demo
 ```
-
 
 
 <!-- NAVIGATION -->

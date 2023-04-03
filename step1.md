@@ -21,8 +21,9 @@
 <!-- CONTENT -->
 
 <div class="step-title">Installation and Setup</div>
+<hr>
 
-**`✅ Install the CLI (linux):`**
+**✅ Install the CLI (linux):**
 
 ```
 ### astra
@@ -30,22 +31,33 @@ curl -Ls "https://dtsx.io/get-astra-cli" | bash
 source /home/gitpod/.astra/cli/astra-init.sh
 ```
 
-> ℹ️ To install on MacOS you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`
+<details><summary>ℹ️ Informations:</summary>
+- To install on `MacOS` you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`
+- To install on `Windows` reuse the script leveraging `WSL2`
+</details>
+&nbsp;
 
-**`✅ Validate installation:`**
+
+**✅ Validate installation:**
 
 ```
 clear
 astra
 ```
 
-**`✅ Setup your token:** (_Enter your token when prompted_)`**
+**✅ Setup your token:** (_Enter your token when prompted_)**
 
 ```
 astra setup
 ```
 
-ℹ️ **Information**:_`astra setup --token AstraCS:...` is also available as a command with no prompt._
+<details><summary>ℹ️ Informations:</summary>
+- Command `astra setup --token AstraCS:...` is also available to avoid prompting.
+</details>
+&nbsp;
+
+
+ℹ️ **Information**:
 
 **`✅ Validate your settings:`**
 
