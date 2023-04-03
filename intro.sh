@@ -9,4 +9,11 @@ echo " ██████╔╝██║  ██║   ██║   ██║  █
 echo " ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ "
 echo ""
 
-echo "Welcome to the scenario, Nothing to do in this terminal at this step. Please create your token if you do not have one"
+echo "Welcome."
+echo ""
+echo "There is no to do in this terminal at this step."
+echo ""
+echo "Please create your token in Astra"
+echo ""
+
+
