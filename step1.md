@@ -27,11 +27,11 @@
 
 **✅ Install the CLI (linux):**
 
-> _To install on MacOS you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`_
+> To install on MacOS you can either reuse the same command or leveraging brew with `brew install datastax/astra-cli/astra-cli`
 
 ```
 ### astra
-curl -Ls "https://dtsx.io/get-astra-cli"
+curl -Ls "https://dtsx.io/get-astra-cli" | bash
 source /home/gitpod/.astra/cli/astra-init.sh
 ```
 
@@ -43,15 +43,15 @@ astra
 
 **✅ Setup your token:**
 
-> _The command `astra setup --token AstraCS:...` is also available with no prompt._
-
-Enter your token in the prompt when asked.
+- Enter your token in the prompt when asked.
 
 ```
 astra setup
 ```
 
-**✅ Show organization:**
+> `astra setup --token AstraCS:...` is also available as a command with no prompt.
+
+**✅ Validate your settings:**
 
 ```
 astra org
@@ -59,11 +59,22 @@ astra org
 
 **✅ Show configurations:**
 
-> The CLI allows you to work on multiple organizations. To know more use `astra help config`
-
 ```
 astra config list
 ```
+
+- The CLI allows you to work on multiple organizations.
+
+```
+astra help config
+```
+
+- Your configuration will saved in `~/.astrarc` file
+
+```
+cat ~/.astrarc
+```
+
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
