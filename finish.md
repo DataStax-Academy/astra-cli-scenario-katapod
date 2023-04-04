@@ -23,9 +23,9 @@
         <br/>
         <div class="scenario-objectives">In this hands-on lab, you saw:</div>
         <ul>
-              <li><span class="scenario-objective">How to install Astra CLI</span></li>
-              <li><span class="scenario-objective">How to setup the software</span></li>
-              <li><span class="scenario-objective">How to interact with Databases</span></li>
+          <li>How to install Astra CLI</li>
+          <li>How to setup the software</li>
+          <li>How to interact with Databases</li>
         </ul>
         More to come soon....
       </div>

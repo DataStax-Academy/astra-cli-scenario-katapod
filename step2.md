@@ -30,6 +30,8 @@ astra db list
 
 **✅ Create a Database `demo`** (~ 1 min)
 
+> ℹ️ Run this command **only once**. It will take about a minute to execute. Several executions are not harmful but will let the console messy.
+
 ```
 astra db create demo --if-not-exist
 ```
@@ -85,11 +87,13 @@ astra db cqlsh demo -k demo
 ```
 
 <details><summary>ℹ️ What is CQLSH ?</summary>
-Cqlsh is a command-line interface for interacting with Apache Cassandra, a NoSQL database. It allows users to execute CQL (Cassandra Query Language) statements and commands to manage and query data stored in Cassandra. Cqlsh provides a convenient way for developers and administrators to interact with Cassandra without the need for a graphical user interface. The CLI download the component and setup the component for you.
+Cqlsh is a command-line interface for interacting with Apache Cassandra, a NoSQL database. It allows users to execute CQL (Cassandra Query Language) statements and commands to manage and query data stored in Cassandra. Cqlsh provides a convenient way for developers and administrators to interact with Cassandra without the need for a graphical user interface. The CLI downloads the component and sets up the component for you.
 </details>
 &nbsp;
 
 **✅ Create a table:**
+
+> ℹ️ This command will be executed in the opened CQLSH.
 
 ```
 CREATE TABLE IF NOT EXISTS cities_by_country  (
@@ -122,8 +126,8 @@ astra db load demo \
   --schema.allowMissingFields true
 ```
 
-<details><summary>ℹ️ What is DSBULK ?</summary>
-DSBulk is a tool for bulk-loading and unloading data from Apache Cassandra and DataStax Enterprise databases. It can handle large volumes of data and offers parallelism, concurrency, and fault tolerance for high-performance data processing. DSBulk supports various data sources, including CSV files, JSON files, and Apache Kafka topics, making it a versatile tool for data integration and migration. The CLI download the component and setup the component for you.
+<details><summary>ℹ️ What is DSBulk ?</summary>
+DSBulk is a tool for bulk-loading and unloading data from Apache Cassandra and DataStax Enterprise databases. It can handle large volumes of data and offers parallelism, concurrency, and fault tolerance for high-performance data processing. DSBulk supports various data sources, including CSV files, JSON files, and Apache Kafka topics, making it a versatile tool for data integration and migration. The CLI downloads the component and sets up the component for you.
 </details>
 &nbsp;
 

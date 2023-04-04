@@ -28,7 +28,7 @@
 astra db status demo
 ```
 
-**✅ After 48 of inactivity, in free tier, DB are hibernated. To resume use the following:**
+**✅ After 48H of inactivity, in free tier, DB are hibernated. To resume use the following:**
 
 ```
 astra db resume demo
@@ -41,8 +41,8 @@ astra db download-scb demo -f /workspace/astra-cli-scenario-katapod/demo-scb.zip
 ls -l /workspace/astra-cli-scenario-katapod/demo-scb.zip
 ```
 
-<details><summary>ℹ️ What is the secure connect bundle ?</summary>
-A Secure Connect Bundle for Datastax Astra is a zip file containing the necessary certificates, configuration files, and drivers to establish a secure connection between an application and a DataStax Astra database. It contains a set of credentials and settings for authentication, encryption, and access control. The Secure Connect Bundle ensures secure communication between the application and the database by using Transport Layer Security (TLS) and verifying the identity of both parties.
+<details><summary>ℹ️ What is the Secure Connect Bundle (SCB) ?</summary>
+A Secure Connect Bundle for Datastax Astra is a zip file containing the necessary certificates and configuration files to establish a secure connection between an application and a DataStax Astra database. It contains a set of credentials and settings for authentication, encryption, and access control. The Secure Connect Bundle ensures secure communication between the application and the database by using Transport Layer Security (TLS) and verifying the identity of both parties.
 </details>
 &nbsp;
 
@@ -52,11 +52,15 @@ A Secure Connect Bundle for Datastax Astra is a zip file containing the necessar
 astra db playground demo
 ```
 
+> ℹ️ You can `CTRL+CLICK` on the link to open the page on a new tab (you might need to disable your ad-blocker)
+
 **✅ Show swagger for REST API:**
 
 ```
 astra db swagger demo
 ```
+
+> ℹ️ You can `CTRL+CLICK` on the link to open the page on a new tab (you might need to disable your ad-blocker)
 
 **✅ Generate configuration file `.env`:**
 

@@ -17,10 +17,10 @@
             <br/>
             <table>
              <tr>
-              <td>Difficulty:</td><td>🟢 `Beginner`</td>
+              <td><b>Difficulty:</b></td><td>🟢 <i>Beginner</i></td>
              </tr>
              <tr>
-              <td>Time:</td><td> ⏰ `15 minutes`</td>
+              <td><b>Time:</b></td><td> ⏰ <i>15 minutes</i></td>
              </tr>
             </table>
       </div>
@@ -32,9 +32,9 @@
 
 > **Datastax Astra** is a cloud-native, fully managed database-as-a-service (DBaaS) based on Apache Cassandra. It provides a scalable, performant and highly available database solution without the operational overhead of managing Cassandra clusters. Astra supports both SQL and NoSQL APIs, and includes features like backup and restore, monitoring and alerting, and access control. It enables developers to focus on application development while the database infrastructure is managed by Datastax.
 
-**`✅ 1.a` - Access `Astra` and register with `Google`,`Github` or an email address.**
+**`✅ 1.a` - Access `Astra` and register with `Google`, `Github` or an email address.**
 
-> ℹ️ This command will open a new Tab in your browser:
+> ℹ️ This command will open a new Tab in your browser. Make sure you disable your ad-blocker or go to [https://astra.datastax.com](https://astra.datastax.com) by yourself.
 
 ```
 gp preview https://astra.datastax.com --external
