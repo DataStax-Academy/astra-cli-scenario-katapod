@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS cities_by_country  (
 
 describe table cities_by_country;
 
-quit
+quit;
 ```
 
 **✅ Import Data in the table:**
@@ -122,7 +122,7 @@ astra db load demo \
   --schema.allowMissingFields true
 ```
 
-<details><summary>ℹ️ What is BSBULK ?</summary>
+<details><summary>ℹ️ What is DSBULK ?</summary>
 DSBulk is a tool for bulk-loading and unloading data from Apache Cassandra and DataStax Enterprise databases. It can handle large volumes of data and offers parallelism, concurrency, and fault tolerance for high-performance data processing. DSBulk supports various data sources, including CSV files, JSON files, and Apache Kafka topics, making it a versatile tool for data integration and migration. The CLI download the component and setup the component for you.
 </details>
 &nbsp;
@@ -138,8 +138,6 @@ astra db cqlsh demo -e "select * from demo.cities_by_country LIMIT 20;"
 ```
 astra db count demo -k demo -t cities_by_country
 ```
-
-
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">

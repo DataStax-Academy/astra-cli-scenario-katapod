@@ -9,7 +9,7 @@
 
 <!-- NAVIGATION -->
 <div id="navigation-top" class="navigation-top">
- <a href='command:katapod.loadPage?[{"step":"step3"}]' 
+ <a href='command:katapod.loadPage?[{"step":"step2"}]' 
    class="btn btn-dark navigation-top-left">⬅️ Back
  </a>
 <span class="step-count"> Step 3 of 4</span>
@@ -56,6 +56,13 @@ astra db playground demo
 
 ```
 astra db swagger demo
+```
+
+**✅ Generate configuration file `.env`:**
+
+```
+astra db create-dotenv demo
+cat.env
 ```
 
 <!-- NAVIGATION -->
