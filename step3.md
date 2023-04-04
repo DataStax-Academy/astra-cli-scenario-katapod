@@ -37,8 +37,8 @@ astra db resume demo
 **✅ Download the cloud secure bundle to connect with drivers:**
 
 ```
-astra db download-scb demo -f /workspace/scenario-astra-cli/demo-scb.zip
-ls -l /workspace/scenario-astra-cli/demo-scb.zip
+astra db download-scb demo -f /workspace/astra-cli-scenario-katapod/demo-scb.zip
+ls -l /workspace/astra-cli-scenario-katapod/demo-scb.zip
 ```
 
 <details><summary>ℹ️ What is the secure connect bundle ?</summary>
@@ -62,7 +62,7 @@ astra db swagger demo
 
 ```
 astra db create-dotenv demo
-cat.env
+cat .env
 ```
 
 <!-- NAVIGATION -->

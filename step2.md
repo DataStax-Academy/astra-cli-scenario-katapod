@@ -116,7 +116,7 @@ quit;
 
 ```
 astra db load demo \
-  -url /workspace/scenario-astra-cli/assets/cities.csv \
+  -url /workspace/astra-cli-scenario-katapod/assets/cities.csv \
   -k demo \
   -t cities_by_country \
   --schema.allowMissingFields true
