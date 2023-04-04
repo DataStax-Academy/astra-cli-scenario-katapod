@@ -1,11 +1,12 @@
+image: gitpod/workspace-full:2023-02-27-14-39-56
 tasks:
-  - name: install-dependencies
+  - name: setup
     before: |
       printf 'export PATH="$HOME%s:$PATH"\n' "/.astra/cli" >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
       curl -Ls "https://dtsx.io/get-astra-cli" | bash >> ./install.log
     init: |
-      pip install -U cqlsh
+      source /home/gitpod/.astra/cli/astra-init.sh
     command: |
       source /home/gitpod/.astra/cli/astra-init.sh
 github:

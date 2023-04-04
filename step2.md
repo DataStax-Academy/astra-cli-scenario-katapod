@@ -22,13 +22,13 @@
 
 <div class="step-title">Working with Databases</div>
 
-**✅ Show your database list**
+**✅ Show your databases list:**
 
 ```
 astra db list
 ```
 
-**✅ Create a Database `demo`**
+**✅ Create a Database `demo`** (~ 1 min)
 
 ```
 astra db create demo
@@ -37,8 +37,8 @@ astra db create demo
 <details><summary>ℹ️ Informations:</summary>
 <li>With no options the free tier will be used. Cloud is <span style="color:blue;font-family:courier new">GCP</span> and region <span style="color:blue;font-family:courier new">us-east-1</span>. 
 <li>Blocking by default, the prompt will be back when the database turned <span style="color:#008800;font-family:courier new">ACTIVE</span>
-<li>You can make async with <span style="color:blue;font-family:courier new">--async</span>
-<li>All options on <span style="color:blue;font-family:courier new">astra help db create</span>
+<li>You can make the command asynchronous with option <span style="color:blue;font-family:courier new">--async</span>
+<li>All options available with <span style="color:blue;font-family:courier new">astra help db create</span>
 </details>
 &nbsp;
 
@@ -47,6 +47,68 @@ astra db create demo
 ```
 astra db describe demo
 ```
+
+**✅ List available keyspaces:**
+
+```
+astra db list-keyspaces demo
+```
+
+**✅ Create a new keyspace `ks2`:**
+
+```
+astra db create-keyspace demo -k ks2
+```
+
+**✅ List available regions:**
+
+```
+astra db list-regions demo
+```
+
+<details><summary>ℹ️ Informations:</summary>
+<li>Free tier allows single region DB. Upgrade to _pay-as-you-go_ to access new regions.
+<li>When creating region all existing data is replicated
+</details>
+&nbsp;
+
+**✅ List available commands for db:**
+
+```
+astra help db
+```
+
+**✅ Connect with CQLSH to keyspace `demo`:**
+
+```
+astra db cqlsh demo -k demo
+```
+
+**✅ Create a table:**
+
+```
+CREATE TABLE cities_by_country (
+ country_name text,
+ name       text,
+ id         int,
+ state_id   text,
+ state_code text,
+ state_name text,
+ country_id text,
+ country_code text,
+ latitude double,
+ longitude double,
+ wikiDataId text,
+ PRIMARY KEY ((country_name), name)
+);
+
+describe table cities_by_country;
+
+quit
+```
+
+
+
 
 
 <!-- NAVIGATION -->
