@@ -1,6 +1,5 @@
 <!-- TOP -->
 <div class="top">
-  <img class="scenario-academy-logo" src="https://datastax-academy.github.io/katapod-shared-assets/images/ds-academy-2023.svg" />
   <div class="scenario-title-section">
     <span class="scenario-title">Getting Started with Astra CLI</span>
     <span class="scenario-subtitle">ℹ️ For technical support, please contact us via <a href="mailto:cedrick.lunven@datastax.com">email</a> or <a href="https://dtsx.io/cedrick">LinkedIn</a>.</span>
@@ -12,7 +11,7 @@
  <a href='command:katapod.loadPage?[{"step":"intro"}]' 
    class="btn btn-dark navigation-top-left">⬅️ Back
  </a>
-<span class="step-count"> Step 1 of 2</span>
+<span class="step-count"> Step 1 of 4</span>
  <a href='command:katapod.loadPage?[{"step":"step2"}]' 
     class="btn btn-dark navigation-top-right">Next ➡️
   </a>
@@ -21,7 +20,6 @@
 <!-- CONTENT -->
 
 <div class="step-title">Installation and Setup</div>
-<hr>
 
 **✅ Install the CLI (linux):**
 
@@ -40,7 +38,7 @@ source /home/gitpod/.astra/cli/astra-init.sh
 
 ```
 clear
-astra
+astra --version
 ```
 
 **✅ Setup your token:** (_Enter your token when prompted_)**
@@ -58,6 +56,7 @@ astra setup
 
 ```
 clear
+astra
 astra org
 ```
 

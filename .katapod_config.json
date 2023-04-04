@@ -33,16 +33,16 @@
             }
           ]
         },
-        "finish": {
-          "term_3": [
+        "step3": {
+          "astra": [
             {
-              "command": "clear; curl http://qrenco.de/Katapod"
-            },
-            {
-              "command": "echo Welcome here ... again and again",
+              "command": "./step3.sh",
               "maxInvocations": "unlimited"
             }
           ]
+        },
+        "finish": {
+          "astra": []
         }
       }
     }

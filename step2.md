@@ -12,7 +12,7 @@
  <a href='command:katapod.loadPage?[{"step":"step1"}]' 
    class="btn btn-dark navigation-top-left">⬅️ Back
  </a>
-<span class="step-count"> Step 1 of 2</span>
+<span class="step-count"> Step 2 of 4</span>
  <a href='command:katapod.loadPage?[{"step":"step3"}]' 
     class="btn btn-dark navigation-top-right">Next ➡️
   </a>
@@ -31,7 +31,7 @@ astra db list
 **✅ Create a Database `demo`** (~ 1 min)
 
 ```
-astra db create demo
+astra db create demo --if-not-exist
 ```
 
 <details><summary>ℹ️ Informations:</summary>
@@ -57,7 +57,7 @@ astra db list-keyspaces demo
 **✅ Create a new keyspace `ks2`:**
 
 ```
-astra db create-keyspace demo -k ks2
+astra db create-keyspace demo -k ks2 --if-not-exist
 ```
 
 **✅ List available regions:**
@@ -84,10 +84,15 @@ astra help db
 astra db cqlsh demo -k demo
 ```
 
+<details><summary>ℹ️ What is CQLSH ?</summary>
+Cqlsh is a command-line interface for interacting with Apache Cassandra, a NoSQL database. It allows users to execute CQL (Cassandra Query Language) statements and commands to manage and query data stored in Cassandra. Cqlsh provides a convenient way for developers and administrators to interact with Cassandra without the need for a graphical user interface. The CLI download the component and setup the component for you.
+</details>
+&nbsp;
+
 **✅ Create a table:**
 
 ```
-CREATE TABLE cities_by_country (
+CREATE TABLE IF NOT EXISTS cities_by_country  (
  country_name text,
  name       text,
  id         int,
@@ -107,7 +112,32 @@ describe table cities_by_country;
 quit
 ```
 
+**✅ Import Data in the table:**
 
+```
+astra db load demo \
+  -url /workspace/scenario-astra-cli/assets/cities.csv \
+  -k demo \
+  -t cities_by_country \
+  --schema.allowMissingFields true
+```
+
+<details><summary>ℹ️ What is BSBULK ?</summary>
+DSBulk is a tool for bulk-loading and unloading data from Apache Cassandra and DataStax Enterprise databases. It can handle large volumes of data and offers parallelism, concurrency, and fault tolerance for high-performance data processing. DSBulk supports various data sources, including CSV files, JSON files, and Apache Kafka topics, making it a versatile tool for data integration and migration. The CLI download the component and setup the component for you.
+</details>
+&nbsp;
+
+**✅ Display information of the table:**
+
+```
+astra db cqlsh demo -e "select * from demo.cities_by_country LIMIT 20;"
+```
+
+**✅ Count records in the table:**
+
+```
+astra db count demo -k demo -t cities_by_country
+```
 
 
 

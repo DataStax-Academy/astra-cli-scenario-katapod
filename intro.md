@@ -14,12 +14,13 @@
      <div class="row g-4 py-2 row-cols-1 row-cols-lg-1">
       <div class="feature col div-choice">
             <div class="scenario-description">Scenario to get started with Astra CLI</div>
+            <br/>
             <table>
              <tr>
-              <td>Difficulty:</td><td>🟢 Beginner</td>
+              <td>Difficulty:</td><td>🟢 `Beginner`</td>
              </tr>
              <tr>
-              <td>Time:</td><td> ⏰ 15 minutes</td>
+              <td>Time:</td><td> ⏰ `15 minutes`</td>
              </tr>
             </table>
       </div>
